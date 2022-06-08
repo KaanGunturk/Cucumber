@@ -60,7 +60,7 @@ public class AmazonStepDefinitions {
     }
     @Given("kullanici {string} icin arama yapar")
     public void kullanici_icin_arama_yapar(String istenenKelime) {
-        amazonPage.aramaKutusu.sendKeys("nutella" + Keys.ENTER);
+        amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
 
     }
     @Given("sonuclarin {string} icerdigini test eder")
